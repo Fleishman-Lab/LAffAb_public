@@ -23,7 +23,7 @@ We recommend relaxing the parental structure before design. A RosettaScripts xml
 A PSSM should be made for the light and heavy chains separately following the approach described here:
 ([Link to paper](https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30266-1)).
 An example combined PSSM including the light, heavy, and antigen chains can be found in examples/example_pssm/
-The ezample includes the antigen chain, which is only there as a placeholder. 
+The example includes the antigen chain, which is only there as a placeholder. 
 
 ### Step 3: Selecting allowed CDR point mutations
 Example xmls for running the alanine scan and hydrogen-bond scan can be found at xmls/alascan.xml and xmls/alascan_Hbond.xml, respectively. Files summarizing the results from the alanine and hydrogen-bond scan on the example pdb can be found at examples/example_alascan/. Each position should take about one minute to run on one CPU. 
