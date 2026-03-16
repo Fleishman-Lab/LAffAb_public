@@ -14,7 +14,7 @@ You will need to either have Rosetta installed or install it from http://www.ros
 ## Running LAffAb
 
 ### Step 1: Relax the structures of the parental antibodies
-We recommend relaxing the parental structure before design. A RosettaScripts xml for running the relax can be found at xmls/Relax.xml and an example pdb can be found in example_pdb. Please note that in our LAffAb protocol, we run the initial relax 15 times and take the lowest-scoring one. The output for the example pdb is in example_pdb_relaxed. Each relax job should take about 15 minutes to run on one CPU. 
+We recommend relaxing the parental structure before design. A RosettaScripts xml for running the relax can be found at xmls/Relax.xml and an example pdb can be found in examples/example_pdb/. Please note that in our LAffAb protocol, we run the initial relax 15 times and take the lowest-scoring one. The output for the example pdb is in examples/example_pdb_relaxed/. Each relax job should take about 15 minutes to run on one CPU. 
 
 ### Step 2: Creating a PSSM for the light and heavy chains of the variable fragment separately
 A PSSM should be made for the light and heavy chains separately following the approach described here:
