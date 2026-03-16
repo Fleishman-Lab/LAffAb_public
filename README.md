@@ -22,7 +22,7 @@ We recommend relaxing the parental structure before design. A RosettaScripts xml
 ### Step 2: Creating a PSSM for the light and heavy chains of the variable fragment separately
 A PSSM should be made for the light and heavy chains separately following the approach described here:
 ([Link to paper](https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30266-1)).
-An example combined PSSM including the light, heavy, and antigen chains can be found in examples/example_pssm/
+An example combined PSSM including the light, heavy, and antigen chains can be found in examples/example_pssm/.
 The example includes the antigen chain, which is only there as a placeholder. 
 
 ### Step 3: Selecting allowed CDR point mutations
