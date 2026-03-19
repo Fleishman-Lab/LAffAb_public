@@ -4,10 +4,11 @@ Licensed under the Non-Profit Open Software License version 3.0.
 This repository contains the RosettaScripts xmls needed to run the LAffAb design steps and some examples. The method is described in our preprint ([Link to paper](https://www.biorxiv.org/content/10.1101/2025.11.26.690765v3)). Questions, comments, and suggestions can be sent to ariel.tennenhouse@weizmann.ac.il.
 
 ## Citations
-Please cite our preprint, PROSS, HuCAL PLATINUM, and RosettaScripts 
-- Tennenhouse, A. et al. Energy-guided combinatorial co-optimization of antibody affinity and stability. bioRxiv (2025) doi:10.1101/2025.11.26.690765.
+Please cite our preprint, PROSS, the paper defining the CDR H3 residue frequencies, HuCAL PLATINUM, and RosettaScripts 
+- Tennenhouse, A. et al. Energy-guided combinatorial co-optimization of antibody affinity and stability. bioRxiv (2025).
 - Goldenzweig, A. et al. Automated structure- and sequence-based design of proteins for high bacterial expression and stability. Mol. Cell 70, 380 (2018).
-- Prassler, J. et al. HuCAL PLATINUM, a synthetic Fab library optimized for sequence diversity and superior performance in mammalian expression systems. J. Mol. Biol. 413, 261–278 (2011).
+- Zemlin, M. et al. Expressed Murine and Human CDR-H3 Intervals of Equal Length Exhibit Distinct Repertoires that Differ in their Amino Acid Composition and Predicted Range of Structures. J. Mol. Biol. (2003). 
+- Prassler, J. et al. HuCAL PLATINUM, a synthetic Fab library optimized for sequence diversity and superior performance in mammalian expression systems. J. Mol. Biol. (2011).
 - Fleishman, S. J. et al. RosettaScripts: a scripting language interface to the Rosetta macromolecular modeling suite. PLoS One 6, e20161 (2011).
 
 ## Installation
