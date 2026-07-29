@@ -1,7 +1,7 @@
 # LAffAb
 Licensed under the Non-Profit Open Software License version 3.0.
 
-This repository contains the RosettaScripts xmls needed to run the LAffAb design steps and some examples. The method is described in our preprint ([Link to paper](https://www.biorxiv.org/content/10.1101/2025.11.26.690765v3)). Questions, comments, and suggestions can be sent to ariel.tennenhouse@weizmann.ac.il.
+This repository contains the RosettaScripts xmls needed to run the LAffAb design steps and some examples. The method is described in our preprint ([Link to paper](https://www.biorxiv.org/content/10.1101/2025.11.26.690765v3)). Questions, comments, and suggestions can be sent to atennenhouse@gmail.com.
 
 ## Citations
 Please cite our preprint, PROSS, the paper defining the CDR H3 residue frequencies, HuCAL PLATINUM, and RosettaScripts 
@@ -21,7 +21,7 @@ A flags file called "flags" is provided. The Rosetta database needs to be update
 We recommend relaxing the parental structure before design. A RosettaScripts xml for running the relax can be found at xmls/Relax.xml and an example pdb can be found in examples/example_pdb/. Please note that in our LAffAb protocol, we run the initial relax 15 times and take the lowest-scoring one. The output for the example pdb is in examples/example_pdb_relaxed/. Each relax job should take about 15 minutes to run on one CPU. 
 
 ### Step 2: Creating a PSSM for the light and heavy chains of the variable fragment separately
-A PSSM should be made for the light and heavy chains separately following the approach described here:
+A PSSM should be made for the light and heavy chains separately, following the approach described here:
 ([Link to paper](https://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30266-1)).
 An example combined PSSM including the light, heavy, and antigen chains can be found in examples/example_pssm/.
 The example includes the antigen chain, which is only there as a placeholder. 
@@ -29,7 +29,7 @@ The example includes the antigen chain, which is only there as a placeholder.
 ### Step 3: Selecting allowed CDR point mutations
 Example xmls for running the alanine scan and hydrogen-bond scan can be found at xmls/alascan.xml and xmls/alascan_Hbond.xml, respectively. Files summarizing the results from the alanine and hydrogen-bond scan on the example pdb can be found at examples/example_alascan/. Each position should take about one minute to run on one CPU. 
 
-An example xml for modeling all allowed point mutations can be found at xmls/filterscan.xml. An example file summarizing the mutations allowed at each CDR H3 position based on the per-position residue frequency data can be found at examples/example_point_muts/allowed_from_freq_data.resfile. The per-position residue frequency data is summarized in "H3_per_res_AA_freqs_data.csv". A file summarizing the results for the example pdb can be found at examples/example_point_muts/6mhr_resfile.resfile. This resfile already screened out mutations based on the alanine scans. Each mutation modeled at each position should take about one minute to run on one CPU.
+Example xmls for modeling all allowed point mutations can be found at xmls/filterscan.xml and xmls/filterscan_H3.xml. There are two different xmls, because CDR H3 mutations are allowed based on per-position residue frequency data, whereas mutations in CDRs other than H3 are allowed based on a PSSM. An example file summarizing the mutations allowed at each CDR H3 position based on the per-position residue frequency data can be found at examples/example_point_muts/allowed_from_freq_data.resfile. The per-position residue frequency data is summarized in "H3_per_res_AA_freqs_data.csv". A file summarizing the results for the example pdb can be found at examples/example_point_muts/6mhr_resfile.resfile. This resfile already screened out mutations based on the alanine scans. Each mutation modeled at each position should take about one minute to run on one CPU.
 
 ### Step 4: Combinatorial enumeration of allowed point mutations
 An example xml for running the combinatorial enumeration can be found at xmls/combinatorial_enumeration.xml. An example pdb file created for the example pdb can be found at examples/example_CDR_enumeration/ Each design job should take about two minutes to run on one CPU. 
